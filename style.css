@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+h1 {
+  font-size: 50px;
+  color: white;
+  margin-top: 5rem;
+}
+
+.genButtons > button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 70px;
+  border: none;
+  margin: 5px 5px;
+  background-color: rgb(250, 250, 245);
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+.genButtons > button:hover {
+  background-color: coral;
+}
+
+.msg {
+  color: white;
+  font-size: 30px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: space-around;
+}
+
+.heading input {
+  visibility: hidden;
+  border: none;
+  border-radius: 5px;
+  width: 500px;
+  height: 30px;
+  padding: 1.5rem;
+}
+.err {
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/02/19/21/nature-3194001_960_720.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+}
+.card {
+  width: 200px;
+  height: 250px;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: rgba(243, 239, 239, 0.35) 0px 5px 15px;
+  background-color: rgba(200, 202, 202, 0.92);
+}
+
+.hide {
+  display: none;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.imgContainer {
+  padding: 15px;
+}
+
+.infoConatiner p {
+  color: black;
+  font-size: 1rem;
+}
+
+.infoConatiner {
+  text-align: center;
+}
+
+.imgContainer img:hover {
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(0deg);
+  }
+}
+
+.icons {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    max-width: 200px;
+  }
+  .card {
+    padding: 1rem;
+  }
+
+  .imgContainer {
+    padding: 20px;
+  }
+}

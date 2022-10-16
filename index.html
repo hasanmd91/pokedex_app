@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="heading">
+          <h1>Pokedex</h1>
+          <div class="genButtons">
+            <button class="genButton" data-value="0">Gen 1</button>
+            <button class="genButton" data-value="1">Gen 2</button>
+            <button class="genButton" data-value="2">Gen 3</button>
+            <button class="genButton" data-value="3">Gen 4</button>
+            <button class="genButton" data-value="4">Gen 5</button>
+            <button class="genButton" data-value="5">Gen 6</button>
+            <button class="genButton" data-value="6">Gen 7</button>
+            <button class="genButton" data-value="7">Gen 8</button>
+          </div>
+          <div class="msg">
+            <p id="result">To see pokemons, choose generations first....</p>
+          </div>
+          <div>
+            <input id="search" type="search" placeholder="Search pokemons" />
+          </div>
+        </div>
+        <div class="err"></div>
+        <div class="cards"></div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
