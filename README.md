@@ -13,7 +13,7 @@
 
 ## Setup and usage
 
-Live page [here](https://hasanmd91.github.io/pokedex_app/)
+Live page [Click here](https://hasanmd91.github.io/pokedex_app/)
 
 ## Screenshot
 
